@@ -3,6 +3,7 @@ import productsModel from "./../models/products.js";
 // Get all products
 const getProducts = async (req, res) => {
   try {
+    console;
     const products = await productsModel.find();
     // const items = products.map((product) => ({
     //   ...product._doc,
@@ -10,7 +11,7 @@ const getProducts = async (req, res) => {
     // }));
     res.status(200).json(products);
   } catch (error) {
-    console.error(error);
+    console.error("broke");
     res.status(500).json({ error: "Failed to fetch products" });
   }
 };
