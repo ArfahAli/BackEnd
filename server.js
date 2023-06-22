@@ -52,7 +52,7 @@ app.use(cors());
 dotenv.config();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
-app.use("/upload", express.static("upload"));
+app.use('/upload',express.static('upload'));
 connection
   .then(() => {
     console.log("DB Connected.");

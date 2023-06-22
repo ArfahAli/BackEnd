@@ -40,12 +40,13 @@ const getProductById = async (req, res) => {
 // Post a new product
 const postProduct = async (req, res) => {
   try {
-    const { id, name,rating, price, quantity} = req.body;
+    const { id, name,image,rating, price, quantity} = req.body;
 
     const newProduct = new productsModel({
       id,
       name,
       rating,
+      image,
       price,
       quantity,
       // image: req.file.path,
