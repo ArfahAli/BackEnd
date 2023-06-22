@@ -7,7 +7,7 @@ const productRouter = express.Router();
 
 productRouter.get('/', getProducts);
 productRouter.post('/', postProduct);
-productRouter.get('/:id', getProductById);
+// productRouter.get('/:id', getProductById);
 
 // ,upload.single('image')
 export default productRouter;

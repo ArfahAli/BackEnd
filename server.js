@@ -60,7 +60,7 @@ connection
   .catch((e) => {
     console.log(e);
   });
-
+app.use("/", productRouter)
 app.use("/AddProduct", productRouter);
 app.use("/LoginSignupContainer", router);
 app.get("/", (req, res) => {
