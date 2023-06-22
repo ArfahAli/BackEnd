@@ -40,7 +40,6 @@
 // });
 
 import express from "express";
-import product from "./routes/products.js";
 import { connection } from "./db/connection.js";
 import cors from "cors";
 import bodyParser from "body-parser";

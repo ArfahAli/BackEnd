@@ -1,5 +1,5 @@
 import express from 'express';
-import {   getProductById, getProducts, postProduct } from '../controllers/product.js';
+import { getProducts, postProduct } from '../controllers/product.js';
 import { upload } from '../multer_config/multer_config.js';
 
 const productRouter = express.Router();
