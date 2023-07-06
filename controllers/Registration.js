@@ -14,3 +14,12 @@ export const registration =async (req, res) => {
       res.status(500).json({ error: 'Internal Server Error' });
     }
   }
+
+  export const getuser = async (req, res) => {
+    try {
+      const data = await User.find();
+      res.json(data);
+    } catch (e) {
+      console.log('error in the getuser is : ', e);
+    }
+  };
